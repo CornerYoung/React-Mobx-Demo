@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { inject,observer} from 'mobx-react'
-import store from '../../store';
 
 @inject('store') //把store注入进来
 @observer //对注入进来的store进行观察，如果store发生变化，home组件中页相应发生变化
