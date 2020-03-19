@@ -34,8 +34,8 @@ class Home extends Component {
         return (
             <div>
                 <h1>Mobx使用</h1>
-                <div>{store.time}</div>
-                <button onClick={() => { this.handleTodos('add')}}>添加一条任务</button>
+                <div>{store.desc}</div>
+                <button onClick={() => { this.handleTodos('add') }}>添加一条任务</button>
                 <button onClick={() => { this.handleTodos('delete') }}>删除一条任务</button>
                 <button onClick={() => { this.handleTodos('reset') }}>重置任务列表</button>
                 <ul>
