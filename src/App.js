@@ -1,9 +1,14 @@
-import React from 'react';
+import React from 'react'
+import {Provider} from 'mobx-react'
+import store from './store'
+import Home from './pages/Home'
 
 function App() {
   return (
     <div className="App">
-      hello mobx
+      <Provider store={store}>
+        <Home/>
+      </Provider>
     </div>
   );
 }
